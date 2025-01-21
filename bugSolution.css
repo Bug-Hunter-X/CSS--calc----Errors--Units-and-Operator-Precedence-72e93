@@ -1,0 +1,22 @@
+/* Correcting unit omission */
+.incorrect-width {
+  width: calc(100% - 10); /* Incorrect: Missing unit */
+}
+
+.correct-width {
+  width: calc(100% - 10px); /* Correct: Added px unit */
+}
+
+/* Correcting order of operations */
+.incorrect-calculation {
+  width: calc(100% - 20px / 2); /* Incorrect: Division is performed before subtraction*/
+}
+
+.correct-calculation {
+  width: calc(100% - (20px / 2)); /* Correct: Parentheses ensure correct order*/
+}
+
+/* Example with multiple calculations and nested parentheses */
+.complex-calculation {
+  width: calc((100% - 50px) / 2 + 10px); /* Correct usage of nesting and parentheses*/
+}
